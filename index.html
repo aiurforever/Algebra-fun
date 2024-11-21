@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Algebra Adventures</title>
+    <title>Algebra Adventures Enhanced</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <!-- Score Display -->
+    <div id="score-container">
+        Score: <span id="score">0</span>
+    </div>
     <!-- App Container -->
     <div id="app"></div>
+    <!-- Hint Modal -->
+    <div id="hint-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeHint()">&times;</span>
+            <p id="hint-text"></p>
+        </div>
+    </div>
     <!-- Link to JavaScript -->
     <script src="app.js"></script>
 </body>
